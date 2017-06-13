@@ -11,7 +11,7 @@ import os
 
 #r.connect("localhost", 28015).repl()
 
-description = "A bot built by Orangutan Gaming (OGaming#7135, 150750980097441792) to quote Dabbit Prime."
+description = f"A bot built by Orangutan Gaming (OGaming#{BotIDs.dev_name}, 150750980097441792) to quote Dabbit Prime."
 
 prefixes = Prefixes.prefixes
 bot = commands.Bot(command_prefix=commands.when_mentioned_or(*prefixes), description=description)
