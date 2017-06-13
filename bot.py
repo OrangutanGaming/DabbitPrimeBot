@@ -41,7 +41,7 @@ startup_extensions = ["cogs.clear",
 
 @bot.event
 async def on_ready():
-    gamename="with OG|!help"
+    gamename="with Dabbit|!help"
     await bot.change_presence(game=discord.Game(name=gamename))
     print("Logged in as")
     print("Name: " + str(bot.user))
@@ -53,10 +53,6 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.author.id == bot.user.id:
-        if "Nihaal" in message.content:
-            await message.edit(content=message.content.replace("Nihaal", "*****"))
-
     if message.author.bot:
         return
 
@@ -65,19 +61,16 @@ async def on_message(message):
             if message.content.startswith(prefix):
                 await message.channel.send("I am still loading.")
                 return
-    # if message.content.endswith == "":
-    #     await message.channel.send("What?")
-    #     return
-    # else:
-    #     if message.content.startswith("\o\\"):
-    #         await message.channel.send("/o/")
-    #         return
-    #     elif message.content.startswith("/o/"):
-    #         await message.channel.send("\o\\")
-    #         return
-    #     elif message.content.startswith("\o/"):
-    #         await message.channel.send("\o/")
-    #         return
+
+    if message.content.startswith("\o\\"):
+        await message.channel.send("/o/")
+        return
+    elif message.content.startswith("/o/"):
+        await message.channel.send("\o\\")
+        return
+    elif message.content.startswith("\o/"):
+        await message.channel.send("\o/")
+        return
     await bot.process_commands(message)
 
 @bot.event
