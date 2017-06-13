@@ -1,19 +1,19 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
+*.log
 
-# Other files and folders
-.settings/
+/Rethinkdb/rethinkdb_data
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+/Rethinkdb/rethinkdb.exe
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+/rethinkdb.ink
+
+.idea
+
+__pycache__
+
+/cogs/utils/extension.py
+
+settings.json
+
+desc.txt
+
+client_secret.json
