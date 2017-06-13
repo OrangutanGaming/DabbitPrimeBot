@@ -136,7 +136,7 @@ class Fun():
         else:
             picChosen = picChosen.lower()
             if picChosen == "list":
-                allQuotes = "`" + "` ,`".join(list(Glen.quotes.keys())) + "`"
+                allQuotes = "`" + "`, `".join(list(Glen.quotes.keys())) + "`"
                 await ctx.send(f"All Glen quotes are: {allQuotes}. Use `link` to see the link for the album.")
                 return
             elif picChosen == "link":
@@ -200,7 +200,7 @@ class Fun():
         else:
             picChosen = picChosen.lower()
             if picChosen == "list":
-                allQuotes = "`" + "` ,`".join(list(Dabbit.quotes.keys())) + "`"
+                allQuotes = "`" + "`, `".join(list(Dabbit.quotes.keys())) + "`"
                 await ctx.send(f"All Dabbit quotes are: {allQuotes}. Use `link` to see the link for the album.")
                 return
             elif picChosen == "link":
